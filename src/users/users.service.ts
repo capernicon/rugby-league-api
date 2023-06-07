@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { User } from './users.interface';
+import { User } from '../interfaces/users.interface';
 
 // This should be a real class/interface representing a user entity
 
