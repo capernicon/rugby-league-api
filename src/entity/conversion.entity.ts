@@ -4,14 +4,11 @@ import { Player } from './player.entity';
 import { Team } from './team.entity';
 
 @Entity()
-export class Goal {
+export class Conversion {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
-  timestamp: Date;
-
-  @ManyToOne(() => Match, (match) => match.goals)
+  @ManyToOne(() => Match, (match) => match.conversions)
   match: Match
 
   @ManyToOne(() => Player, (player) => player.id)
